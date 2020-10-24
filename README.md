@@ -91,6 +91,5 @@ This _printf function currently does not support special flags [+ , - , `, \0 , 
 There are no known bugs at the time.
 
 ### Authors
-*Nicolas Ribeiro* - [Github](https://github.com/nikolasribeiro) || [email](nikolas.sebastian.ribeiro@gmail.com) 
-*Carlos Araque* - [Github](https://github.com/carlosaraque22)
-
+*Nicolas Ribeiro* - [Github](https://github.com/nikolasribeiro) -							[email](nikolas.sebastian.ribeiro@gmail.com)
+||*Carlos Araque* - [Github](https://github.com/carlosaraque22) -							[email](cararqueu@gmail.com)
