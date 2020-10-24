@@ -15,19 +15,8 @@ Once cloned over, the repository will contain the following files:
 |   **File**    |  **Decription**                       |
 |---------------|---------------------------------------|
 | holberton.h   | header file with prototypes           |
-| printf.c      | contains main printf function         |
-| _putchar.c     | contains putchar function             |
-| string_specifiers.c | contains functions for **s** and **c** |
-| string_spec_helpers.c     | contains functions to help with string functions in string_specifiers.c|
-| signed_decimal_specifiers.c | contains functions for **d** and **i** |
-| unsigned_specifiers.c | contains functions for **o**, **u**, **x**, **X** |
-| binary_specifier.c     | contains functions for **b**|
-| pointer_address_specifiers.c | contains functions for **p** |
-| write_percent specifiers.c | contains functions for **'%'** |
-| write_buffer.c     | contains functions to write to the buffer |
-| reset_buffer.c     | contains functions to reset the buffer |
-| rev_string.c     | contains functions to reverse strings |
-| rot_13.c     | contains functions to converts a string to rot13 format |
+| set_buffer.c     | contains functions to write to the buffer |
+
 
 ### Format tags
 Format tags implemented in _printf
