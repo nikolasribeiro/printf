@@ -6,12 +6,13 @@
 * @valist: valist
 * Return: void
 */
-void set_string(va_list valist)
+int set_string(va_list valist)
 {
-	int i;
+	int i, count = 0;
 	char *s;
 	
 	s = va_arg(valist, char*);
+
 	if (s == NULL)
 	{
 		s = "(null)";
@@ -20,7 +21,10 @@ void set_string(va_list valist)
 	for (i = 0; s[i] != '\0'; i++)
 	{
 		_putchar(s[i]);
+		count++;
 	}
+
+	return (count);
 }
 
 /**
@@ -28,7 +32,7 @@ void set_string(va_list valist)
 * @valist: valist
 * Return: void
 */
-void set_char(va_list valist)
+int set_char(va_list valist)
 {
 	char s;
 
@@ -36,9 +40,10 @@ void set_char(va_list valist)
 
 	if (s == '\0')
 	{
-		return;
+		return (0);
 	}
 
 	_putchar(s);
 
+	return (1);
 }

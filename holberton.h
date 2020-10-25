@@ -16,16 +16,14 @@ int _printf(const char *format, ...);
 typedef struct format
 {
 	char *opt;
-	void (*call_fun)();
+	int (*call_fun)();
 } format_t;
 
-void _write_buffer(char *buffer, int *index);
-void reset_buffer(char *buffer);
-char *_copy_of_memory(char *dest, char *src, unsigned int max);
 int _printf(const char *format, ...);
-void set_string(va_list valist);
-void set_char(va_list valist);
+int set_string(va_list valist);
+int set_char(va_list valist);
 int _putchar(char c);
-void set_decimal(va_list valist);
+int set_decimal(va_list valist);
 int length_of_integer(int n);
+int get_length(char *str __attribute__((__unused__)), va_list valist);
 #endif

@@ -3,13 +3,11 @@
 * set_decimal- function that returns an int to signed decimal
 * @valist: arguments passed
 */
-void set_decimal(va_list valist)
+int set_decimal(va_list valist)
 {
 	int i;
-
 	i = va_arg(valist, int);
-
-	printf("Esto es length_of_integer: %i\n", length_of_integer(i));
+	return (length_of_integer(i));
 }
 
 /**

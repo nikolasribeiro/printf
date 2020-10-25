@@ -6,7 +6,7 @@
 */
 int _printf(const char *format, ...)
 {
-	int i, j;
+	int i, j, count;
 	va_list valist;
 	format_t get_opt[] = {
 		{"c", set_char}, {"s", set_string},
@@ -33,9 +33,10 @@ int _printf(const char *format, ...)
 			{
 				if (format[i] == get_opt[j].opt[0])
 				{
-					get_opt[j].call_fun(valist, count);
+					count += get_opt[j].call_fun(valist);
 					break;
 				}
+
 			}
 		}
 		else
@@ -44,5 +45,6 @@ int _printf(const char *format, ...)
 		}
 	}
 	va_end(valist);
-	return (i + 1);
+
+	return (count);
 }
