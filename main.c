@@ -14,7 +14,7 @@ int main(void)
 	//unsigned int ui;
 	//void *addr;
 	
-	_printf("Hola Mundo %c %s", 'N', "Hello Holberton");
+	_printf("Hola Mundo %c %s  desde el printf principal %s %c esto es texto estatico\n", 'N', "Hello Holberton", "Esto es texto desde variable dinamica", 'B');
 	/*
 	len = _printf("Let's try to printf a simple sentence.\n");
 	len2 = printf("Let's try to printf a simple sentence.\n");

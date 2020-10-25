@@ -1,12 +1,20 @@
 #include "holberton.h"
 
+
+void debug()
+{
+	printf("Tomo el valor de la contrabarra invertida!");
+}
+
+
+
 int _printf(const char *format, ...)
 {
 	int i, j;
 	va_list valist;
 
 	format_t get_opt[] = {
-		{"c", set_char}, {"s", set_string}, {NULL, NULL}
+		{"c", set_char}, {"s", set_string}, {"n", debug}, {NULL, NULL}
 	};
 
 	if (!format)
@@ -21,6 +29,11 @@ int _printf(const char *format, ...)
 		{
 			break;
 		}
+		
+		if (format[i] == '\n')
+		{
+			_putchar('\n');
+		}
 
 		if (format[i] == '%')
 		{
@@ -34,6 +47,13 @@ int _printf(const char *format, ...)
 				}
 			}
 		}
+		else
+		{
+			_putchar(format[i]);
+		}
+		
+		
+
 	}
 	va_end(valist);
 	return (0);
