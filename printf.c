@@ -44,5 +44,5 @@ int _printf(const char *format, ...)
 		}
 	}
 	va_end(valist);
-	return (0);
+	return (i+1);
 }
