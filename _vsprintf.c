@@ -9,7 +9,7 @@
 */
 int parse_format(const char *format, format_t get_opt[], va_list valist)
 {
-	int i, j, count, total_characters;
+	int i, j, count, total_characters = 0;
 
 	for (i = 0; format[i] != '\0'; i++)
 	{
