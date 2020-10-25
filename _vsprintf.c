@@ -1,5 +1,12 @@
 #include "holberton.h"
-
+/**
+* parse_format - Receives the main string and all the necessary parameters to
+* print a formated string.
+* @format: A string containing all the desired characters.
+* @get_opt: A list of all the posible functions.
+* @valist: A list containing all the argumentents passed to the program.
+* Return: A total count of the characters printed.
+*/
 int parse_format(const char *format, format_t get_opt[], va_list valist)
 {
 	int i, j, count, total_characters;
