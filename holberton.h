@@ -8,10 +8,10 @@
 int _printf(const char *format, ...);
 
 /**
- * struct format - This is a typedef struct.
- * @operator: Pointer type char.
- * @call_fun: Pointer to call the function.
- */
+* struct format - This is a typedef struct.
+* @opt: Pointer type char.
+* @call_fun: Pointer to call the function.
+*/
 
 typedef struct format
 {
