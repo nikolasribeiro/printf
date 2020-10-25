@@ -26,13 +26,6 @@ Format tags implemented in _printf
 | c             | characters                            |
 | s             | string of characters                  |
 | d or i        | int to signed decimal                 |
-| o             | unsigned int to unsigned octal        |
-| u             | unsigned int to unsigned decimal      |
-| x or X        | unsigned int to unsigned hexadecimal  |
-| p             | pointer address                       |
-| %             | no conversion, writes '%'             |
-| r             | reverses string input                 |
-| R             | converts string input into rot13      |
 | b             | unsigned int to binary                |
 
 ## How to Use
