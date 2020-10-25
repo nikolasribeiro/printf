@@ -13,10 +13,6 @@ int parse_format(const char *format, format_t get_opt[], va_list valist)
 
 	for (i = 0; format[i] != '\0'; i++)
 	{
-		if (format[i] == '\0')
-		{
-			break;
-		}
 
 		if (format[i] == '%')
 		{
