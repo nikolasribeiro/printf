@@ -26,8 +26,6 @@ int _printf(const char *format, ...);
 void set_string(va_list valist);
 void set_char(va_list valist);
 int _putchar(char c);
-void new_line();
-void format_perc(void)
 void set_decimal(va_list valist);
 int length_of_integer(int n);
 #endif

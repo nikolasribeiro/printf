@@ -1,9 +1,7 @@
 #include "holberton.h"
 /**
-* format_d - function that returns an int to signed decimal
+* set_decimal- function that returns an int to signed decimal
 * @valist: arguments passed
-* @buffer: values stored
-* @index: tracks index position
 */
 void set_decimal(va_list valist)
 {
@@ -11,9 +9,14 @@ void set_decimal(va_list valist)
 
 	i = va_arg(valist, int);
 
-	printf("Esto es length_of_integer: %i\n",length_of_integer(i));
+	printf("Esto es length_of_integer: %i\n", length_of_integer(i));
 }
 
+/**
+* length_of_integer - function that returns an int to signed decimal
+* @n: integer
+* Return: length of the integer
+*/
 int length_of_integer(int n)
 {
 	if (n < 0)
@@ -26,6 +29,6 @@ int length_of_integer(int n)
 	}
 	else
 	{
-		return (1 + length_of_integer(n/10));
+		return (1 + length_of_integer(n / 10));
 	}
 }

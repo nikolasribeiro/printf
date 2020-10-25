@@ -11,7 +11,6 @@ int _printf(const char *format, ...)
 	format_t get_opt[] = {
 		{"c", set_char}, {"s", set_string},
 		{"i", set_decimal}, {"d", set_decimal},
-		{"%", format_perc},
 		{NULL, NULL}
 	};
 	if (!format)
@@ -45,5 +44,5 @@ int _printf(const char *format, ...)
 		}
 	}
 	va_end(valist);
-	return (0);
+	return (i);
 }

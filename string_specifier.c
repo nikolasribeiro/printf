@@ -16,12 +16,12 @@ void set_string(va_list valist)
 	{
 		s = "(null)";
 	}
-	
+
 	for (i = 0; s[i] != '\0'; i++)
 	{
 		_putchar(s[i]);
 	}
-	
+
 }
 
 /**
@@ -34,12 +34,12 @@ void set_char(va_list valist)
 	char s;
 
 	s = va_arg(valist, int);
-	
+
 	if (s == '\0')
 	{
 		return;
 	}
-	
+
 	_putchar(s);
 
 }
