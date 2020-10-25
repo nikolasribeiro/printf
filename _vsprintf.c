@@ -34,6 +34,20 @@ int parse_format(const char *format, format_t get_opt[], va_list valist)
 					break;
 				}
 			}
+
+			if (get_opt[j].opt == NULL && format[i + 1] != ' ')
+			{
+				if (format[i + 1] != '\0')
+				{
+					_putchar(format[i]);
+					_putchar(format[i + 1]);
+					total_characters = total_characters + 2;
+				}
+				else
+				{
+					return (-1);
+				}
+			}
 		}
 		else
 		{
