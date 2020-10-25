@@ -20,7 +20,6 @@ int parse_format(const char *format, format_t get_opt[], va_list valist)
 
 		if (format[i] == '%')
 		{
-			i++;
 			for (j = 0; get_opt[j].opt != NULL; j++)
 			{
 				if (format[i] == get_opt[j].opt[0])
@@ -48,6 +47,7 @@ int parse_format(const char *format, format_t get_opt[], va_list valist)
 					return (-1);
 				}
 			}
+			i++;
 		}
 		else
 		{
