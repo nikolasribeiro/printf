@@ -18,7 +18,7 @@ int parse_format(const char *format, format_t get_opt[], va_list valist)
 		{
 			for (j = 0; get_opt[j].opt != NULL; j++)
 			{
-				if (format[i] == get_opt[j].opt[0])
+				if (format[i + 1] == get_opt[j].opt[0])
 				{
 					count = get_opt[j].call_fun(valist);
 					if (count == -1)
@@ -43,7 +43,7 @@ int parse_format(const char *format, format_t get_opt[], va_list valist)
 					return (-1);
 				}
 			}
-			i++;
+			i = i + 1;
 		}
 		else
 		{
