@@ -1,0 +1,18 @@
+.TH _printf "25 October 2020" "_printf man page"
+.SH NAME
+.B _printf - Format and print data in the screen.
+.SH SYNOPSIS
+.IP
+.I _printf FORMAT [ARGUMENT]...
+.IP
+.I _printf [OPTIONS]
+.SH DESCRIPTION
+The _printf function (which derives its name from "print formatted") prints a message on the screen using a "format string" that includes the instructions to mix multiple strings into the final string to display on the screen.
+.SH RETURN VALUE
+The _printf function returns the number of characters written. If it returns a negative value it indicates that an error has occurred.
+.SH FORMATS OF THE FUNCTION
+The symbol "%" denotes the beginning of the format mark. Every brand, therefore, begins with the symbol "%" and ends with its type. Each of the names (parameter, flags, width, precision, length, and type) represents a set of possible values that are explained below. Example:
+.IP
+.B _printf("The value is %d.", counter);
+.IP
+.B The %d mark is replaced by the value of the variable contadorand the resulting string is printed.
