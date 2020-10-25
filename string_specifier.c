@@ -10,7 +10,7 @@ void set_string(va_list valist)
 {
 	int i;
 	char *s;
-
+	
 	s = va_arg(valist, char*);
 	if (s == NULL)
 	{
@@ -21,7 +21,6 @@ void set_string(va_list valist)
 	{
 		_putchar(s[i]);
 	}
-
 }
 
 /**
