@@ -6,7 +6,7 @@
 */
 int _printf(const char *format, ...)
 {
-	int i, j, count;
+	int i, j;
 	va_list valist;
 	format_t get_opt[] = {
 		{"c", set_char}, {"s", set_string},
@@ -18,7 +18,7 @@ int _printf(const char *format, ...)
 		return (-1);
 	}
 	va_start(valist, format);
-	for (i = 0; format[i] != '\0' && format != NULL; count += 1, i++)
+	for (i = 0; format[i] != '\0' && format != NULL; i++)
 	{
 		if (format[i] == '\0')
 			break;
@@ -44,5 +44,5 @@ int _printf(const char *format, ...)
 		}
 	}
 	va_end(valist);
-	return (count);
+	return (i + 1);
 }
