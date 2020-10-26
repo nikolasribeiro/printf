@@ -15,7 +15,7 @@ int set_decimal(va_list valist)
 	if (i < 0)
 	{
 		len += _putchar('-');
-		num = i * -1;	
+		num = i * -1;
 	}
 	else
 	{

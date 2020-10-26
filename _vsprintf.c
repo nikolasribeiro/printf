@@ -21,9 +21,7 @@ int parse_format(const char *format, format_t get_opt[], va_list valist)
 				{
 					count = get_opt[j].call_fun(valist);
 					if (count == -1)
-					{
 						return (-1);
-					}
 					total_characters += count;
 					break;
 				}
