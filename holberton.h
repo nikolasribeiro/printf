@@ -6,7 +6,7 @@
 #include <string.h>
 
 int _printf(const char *format, ...);
-void *rev_string(char *b);
+
 /**
 * struct format - This is a typedef struct.
 * @opt: Pointer type char.
@@ -27,5 +27,5 @@ int set_decimal(va_list valist);
 int print_percent(__attribute__((unused))va_list valist);
 int length_of_integer(int n);
 int get_length(char *str __attribute__((__unused__)), va_list valist);
-int *typeformat_b(va_list valist);
+int print_b(va_list b);
 #endif
