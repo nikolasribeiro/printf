@@ -4,11 +4,11 @@
 /**
 * set_string - specificer s
 * @valist: valist
-* Return: void
+* Return: total characters
 */
 int set_string(va_list valist)
 {
-	int i, count = 0;
+	int i;
 	char *s;
 
 	s = va_arg(valist, char*);
@@ -21,10 +21,9 @@ int set_string(va_list valist)
 	for (i = 0; s[i] != '\0'; i++)
 	{
 		_putchar(s[i]);
-		count++;
 	}
 
-	return (count);
+	return (i);
 }
 
 /**
