@@ -28,7 +28,4 @@ int print_percent(__attribute__((unused))va_list valist);
 int length_of_integer(int n);
 int get_length(char *str __attribute__((__unused__)), va_list valist);
 int typeformat_b(va_list valist, char *bi, int *i);
-int set_unsigned_int(va_list valist);
-int print_unsgined_number(unsigned int _int);
-unsigned int base_len(unsigned int num, int base);
 #endif
