@@ -12,7 +12,6 @@ int set_decimal(va_list valist)
 	i = va_arg(valist, int);
 	div = 1;
 	len = 0;
-
 	if (i < 0)
 	{
 		len += _putchar('-');
