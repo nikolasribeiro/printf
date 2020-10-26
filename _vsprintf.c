@@ -28,6 +28,8 @@ int parse_format(const char *format, format_t get_opt[], va_list valist)
 					break;
 				}
 			}
+			if (format[i] == '\0')
+				break;
 			if (get_opt[j].opt == NULL && format[i + 1] != ' ')
 			{
 				if (format[i + 1] != '\0')
