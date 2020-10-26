@@ -8,7 +8,7 @@
 * @i: integer pointer
 */
 
-void typeformat_b(va_list valist, char *bi, int *i)
+int typeformat_b(va_list valist, char *bi, int *i)
 {
 	unsigned int n;
 	int ii;
