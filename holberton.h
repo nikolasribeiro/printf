@@ -12,7 +12,6 @@ int _printf(const char *format, ...);
 * @opt: Pointer type char.
 * @call_fun: Pointer to call the function.
 */
-
 typedef struct format
 {
 	char *opt;
