@@ -33,16 +33,6 @@ int set_string(va_list valist)
 */
 int set_char(va_list valist)
 {
-	char s;
-
-	s = va_arg(valist, int);
-
-	if (s == '\0')
-	{
-		return (0);
-	}
-
-	_putchar(s);
-
+	_putchar(va_arg(valist, int));
 	return (1);
 }
