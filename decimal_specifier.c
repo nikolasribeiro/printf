@@ -36,3 +36,4 @@ int set_decimal(va_list valist)
 
 	return (len);
 }
+
