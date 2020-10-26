@@ -2,10 +2,12 @@
 /**
 * set_decimal- function that returns an int to signed decimal
 * @valist: arguments passed
+* Return: length of integers
 */
 int set_decimal(va_list valist)
 {
 	int i;
+
 	i = va_arg(valist, int);
 	return (length_of_integer(i));
 }

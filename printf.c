@@ -11,7 +11,7 @@ int _printf(const char *format, ...)
 	format_t get_opt[] = {
 		{"c", set_char},
 		{"s", set_string},
-		{"i", set_decimal}, 
+		{"i", set_decimal},
 		{"d", set_decimal},
 		{"%", print_percent},
 		{NULL, NULL}
@@ -21,10 +21,10 @@ int _printf(const char *format, ...)
 	{
 		return (-1);
 	}
-	
+
 	va_start(valist, format);
 	count = parse_format(format, get_opt, valist);
 	va_end(valist);
-	
+
 	return (count);
 }

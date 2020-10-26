@@ -10,7 +10,7 @@ int set_string(va_list valist)
 {
 	int i, count = 0;
 	char *s;
-	
+
 	s = va_arg(valist, char*);
 
 	if (s == NULL)

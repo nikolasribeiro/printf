@@ -13,7 +13,6 @@ int parse_format(const char *format, format_t get_opt[], va_list valist)
 
 	for (i = 0; format[i] != '\0'; i++)
 	{
-
 		if (format[i] == '%')
 		{
 			for (j = 0; get_opt[j].opt != NULL; j++)
@@ -29,7 +28,6 @@ int parse_format(const char *format, format_t get_opt[], va_list valist)
 					break;
 				}
 			}
-
 			if (get_opt[j].opt == NULL && format[i + 1] != ' ')
 			{
 				if (format[i + 1] != '\0')
@@ -39,9 +37,7 @@ int parse_format(const char *format, format_t get_opt[], va_list valist)
 					total_characters = total_characters + 2;
 				}
 				else
-				{
 					return (-1);
-				}
 			}
 			i = i + 1;
 		}
@@ -51,6 +47,5 @@ int parse_format(const char *format, format_t get_opt[], va_list valist)
 			total_characters++;
 		}
 	}
-
 	return (total_characters);
 }
