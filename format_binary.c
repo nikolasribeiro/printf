@@ -18,20 +18,4 @@ char typeformat_b(va_list valist)
 
 	binary = b;
 
-	if (n == 0)
-	{
-		b[++i] = '0';
-	}
-	while (n != 0)
-	{
-		b[i] = (n % 2) + '0';
-		i++;
-		n /= 2;
-	}
-
-	rev_string(s);
-	b[i] = '\0';
-
-	return (b);
-
-}
+	i
