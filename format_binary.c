@@ -8,7 +8,7 @@
 * @i: integer pointer
 */
 
-void typeformat_b(va_list valist, char *bi, int *i)
+int typeformat_b(va_list valist, char *bi, int *i)
 {
 	unsigned int n;
 	int ii;
@@ -19,7 +19,7 @@ void typeformat_b(va_list valist, char *bi, int *i)
 	binary = "01";
 	binary2 = malloc(33 * sizeof(char));
 	if (binary2 == NULL)
-		return;
+		return (0);
 	if (n == 0)
 	{
 		bi[*i] = '\0';
@@ -38,4 +38,6 @@ void typeformat_b(va_list valist, char *bi, int *i)
 		}
 	}
 	free(binary2);
+
+	return (ii);
 }
