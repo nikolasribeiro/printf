@@ -1,10 +1,13 @@
 #include "holberton.h"
+#include <stdio.h>
+#include <stdlib.h>
+
 /**
  *
  *comentarios van aqui
  */
 
-int typeformat_b(va_list valist, char *bi, int *i)
+void typeformat_b(va_list valist, char *bi, int *i)
 {
 	unsigned int n;
 	int ii;
