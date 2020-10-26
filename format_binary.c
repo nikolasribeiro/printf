@@ -6,6 +6,7 @@
 * @valist: taking in arguments
 * @bi: char pointer
 * @i: integer pointer
+* Return: integer
 */
 
 int typeformat_b(va_list valist, char *bi, int *i)
