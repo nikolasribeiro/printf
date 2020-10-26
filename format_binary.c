@@ -9,19 +9,21 @@
 * Return: integer
 */
 
-int typeformat_b(va_list valist)
+int *typeformat_b(va_list valist)
 {
-	unsigned int n = va_arg(list, unsigned int);
-	int i = 0;
+	unsigned int n = va_arg(valist, unsigned int);
+	int i;
 	char *binary;
-	char b;
+	char b[1024];
 
 	binary = b;
-
+	i = 0;
+	
 	if (n == 0)
 	{
 		b[++i] = '\0';
 	}
+	
 	while (n != 0)
 	{
 		b[i] = (n % 2) + '0';
