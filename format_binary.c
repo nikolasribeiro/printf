@@ -18,14 +18,6 @@ char typeformat_b(va_list valist)
 
 	binary = b;
 
-<<<<<<< HEAD
-=======
-	n = va_arg(valist, int);
-	binary = "01";
-	binary2 = malloc(33 * sizeof(char));
-	if (binary2 == NULL)
-		return (0);
->>>>>>> 19106d8e2d7ae08754e91668122c96e64ac0db9d
 	if (n == 0)
 	{
 		b[++i] = '0';
@@ -36,15 +28,10 @@ char typeformat_b(va_list valist)
 		i++;
 		n /= 2;
 	}
-<<<<<<< HEAD
 
 	rev_string(s);
 	b[i] = '\0';
 
 	return (b);
-=======
-	free(binary2);
 
-	return (ii);
->>>>>>> 19106d8e2d7ae08754e91668122c96e64ac0db9d
 }
