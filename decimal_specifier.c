@@ -6,29 +6,34 @@
 */
 int set_decimal(va_list valist)
 {
-	int i;
+	int i, div, len;
+	unsigned int num;
 
 	i = va_arg(valist, int);
-	return (length_of_integer(i));
-}
+	div = 1;
+	len = 0;
 
-/**
-* length_of_integer - function that returns an int to signed decimal
-* @n: integer
-* Return: length of the integer
-*/
-int length_of_integer(int n)
-{
-	if (n < 0)
+	if (i < 0)
 	{
-		return (1 + length_of_integer(-n));
-	}
-	else if (n < 10)
-	{
-		return (1);
+		len += _putchar('-');
+		num = i * -1;	
 	}
 	else
 	{
-		return (1 + length_of_integer(n / 10));
+		num = i;
 	}
+
+	for (; num / div > 9;)
+	{
+		div *= 10;
+	}
+
+	for (; div != 0;)
+	{
+		len += _putchar('0' + (num / div));
+		num %= div;
+		div /= 10;
+	}
+
+	return (len);
 }

@@ -26,6 +26,5 @@ int _printf(const char *format, ...)
 	count = parse_format(format, get_opt, valist);
 	va_end(valist);
 
-
 	return (count);
 }
