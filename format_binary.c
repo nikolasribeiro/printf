@@ -1,12 +1,12 @@
 #include "holberton.h"
 #include <stdio.h>
 #include <stdlib.h>
-
 /**
- *
- *comentarios van aqui
- */
-
+* typeformat_b - function to convert to unsigned integer to binary
+* @valist: taking in arguments
+* @bi: char pointer
+* @i: integer pointer
+*/
 void typeformat_b(va_list valist, char *bi, int *i)
 {
 	unsigned int n;
