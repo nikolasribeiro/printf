@@ -7,6 +7,7 @@
 * @bi: char pointer
 * @i: integer pointer
 */
+
 void typeformat_b(va_list valist, char *bi, int *i)
 {
 	unsigned int n;
