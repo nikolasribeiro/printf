@@ -9,13 +9,40 @@
 * Return: integer
 */
 
-char typeformat_b(va_list valist)
+int typeformat_b(va_list valist, char *bi, int *i)
 {
-	unsigned int n = va_arg(valist, unsigned int);
-	int i = 0;
+	unsigned int n;
+	int ii;
 	char *binary;
-	char b;
+	char *binary2;
 
-	binary = b;
-
+<<<<<<< HEAD
 	i
+=======
+	n = va_arg(valist, int);
+	binary = "01";
+	binary2 = malloc(33 * sizeof(char));
+	if (binary2 == NULL)
+		return (0);
+	if (n == 0)
+	{
+		bi[*i] = '\0';
+		*i = *i + 1;
+	}
+	else
+	{
+		for (ii = 0; n != 0; ii++)
+		{
+			binary2[ii] = binary[n % 2];
+			n /= 2;
+		}
+		for (ii--; ii >= 0; *i = *i + 1, i--)
+		{
+			bi[*i] = binary2[ii];
+		}
+	}
+	free(binary2);
+
+	return (ii);
+}
+>>>>>>> 6c5f9161818d33aa48b3d43df8d301ae5b0d9efd
