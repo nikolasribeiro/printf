@@ -26,7 +26,6 @@ Format tags implemented in _printf
 | c             | characters                            |
 | s             | string of characters                  |
 | d or i        | int to signed decimal                 |
-| b             | unsigned int to binary                |
 
 ## How to Use
 There are two ways to use the _printf function in your code.
