@@ -28,4 +28,17 @@ The argument passed for specifier "%c" is of type int. "%c" converts it to a uns
 .IP s
 The argument passed for specifier "%s" is a string in consta char *. "%s" prints the string pointed to by the char *.
 .IP %
-The argument passed is not converted, it will only print a percent sign "%". To use this you must write "%%" (\\%\ also works)
+The argument passed is not converted, it will only print a percent sign "%". To use this you must write "%%" (\\%\ also works).
+.IP i,d
+The argument passed is an int argument, "%i" or "%d" do a signed decimal conversion of an integer.
+
+.SH BUGS
+At the moment we do not find errors.
+
+.SH NOTES
+At the moment we don't have support for "+","#", "-", space, field width, 0 flag character, reverse, Rot13, and binary.
+
+.SH AUTHORS
+Nicolas Ribeiro and Carlos Araque.
+
+.SH This is a project for Holberton School (25/10/2020)
